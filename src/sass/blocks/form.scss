@@ -96,3 +96,9 @@
   border: none;
   border-radius: 10px;
 }
+
+.form__item {
+  &--alert {
+    border: 1px solid red;
+  }
+}
