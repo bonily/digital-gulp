@@ -1,0 +1,91 @@
+.item {
+  width: 380px;
+  height: 525px;
+
+  padding-left: 41px;
+  padding-right: 48px;
+
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+
+  @media (max-width: 380px) {
+    width: 315px;
+    height: 585px;
+  }
+
+  &--digital {
+    @media (max-width: 380px) {
+      height: 605px;
+    }
+  }
+}
+
+.item__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  line-height: 30px;
+
+  letter-spacing: 0.05em;
+
+  color: #1f3f68;
+}
+
+.item__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  letter-spacing: 0.05em;
+
+  color: #1f3f68;
+  opacity: 0.6;
+}
+
+.item__button {
+  display: block;
+  position: relative;
+
+  width: 131px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+
+  letter-spacing: 0.05em;
+
+  color: #5a98d0;
+
+  & img {
+    position: relative;
+
+    bottom: -7px;
+    margin-left: 21px;
+  }
+}
+
+.item__img {
+  position: relative;
+  top: -17px;
+
+  width: 232px;
+  height: 202px;
+
+  margin-bottom: 35px;
+
+  background: url("../img/famous_business.png") no-repeat bottom center;
+
+  &--tehnology {
+    top: -15px;
+    margin-left: 32px;
+    background: url("../img/tehnology.png") no-repeat bottom center;
+  }
+  &--digital {
+    top: -21px;
+    margin-left: 9px;
+    background: url("../img/digital.png") no-repeat bottom center;
+  }
+}

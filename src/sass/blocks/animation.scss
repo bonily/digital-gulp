@@ -1,0 +1,103 @@
+.animation {
+  width: 687.25px;
+  height: 612.56px;
+
+  background: url("../img/animation_bg.png") no-repeat;
+  z-index: -1;
+}
+
+@keyframes animationBb {
+  from {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(3deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  85% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animation__bg {
+  position: relative;
+
+  left: 20px;
+  top: 17px;
+
+  animation: 10s animationBb ease-in-out infinite;
+}
+
+.animation__women {
+  position: absolute;
+
+  top: -42px;
+  left: 351px;
+}
+
+.animation__men {
+  position: absolute;
+
+  top: 215px;
+  left: 80px;
+}
+
+@keyframes smallCircleAnimation {
+  from {
+    top: 100%;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+.animation__circle {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+  animation: 10s smallCircleAnimation ease-in-out infinite;
+
+  &--first {
+    top: 308px;
+    left: 105px;
+    animation-delay: 2s;
+  }
+
+  &--second {
+    top: 417px;
+    left: 270px;
+    animation-delay: 1s;
+  }
+
+  &--theird {
+    top: 149px;
+    left: 419px;
+    animation-delay: 4s;
+  }
+
+  &--fourth {
+    top: 300px;
+    left: 545px;
+    animation-delay: 3s;
+  }
+}

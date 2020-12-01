@@ -1,0 +1,100 @@
+.company {
+  position: relative;
+
+  padding-left: 14%;
+  padding-top: 5.5%;
+  padding-bottom: 12.5%;
+
+  background: linear-gradient(
+    0deg,
+    rgba(152, 195, 232, 0.2) 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
+
+  @include center;
+
+  @media (max-width: 1260px) {
+    padding-bottom: 25.5%;
+  }
+  @media (max-width: 1170px) {
+    padding-bottom: 32.5%;
+  }
+  @media (max-width: 1060px) {
+    padding-bottom: 49.5%;
+  }
+  @media (max-width: 1000px) {
+    padding-bottom: 56.5%;
+  }
+  @media (max-width: 871px) {
+    padding-bottom: 12.5%;
+  }
+}
+
+.company__title {
+  max-width: 530px;
+
+  margin: 0;
+  margin-bottom: 3.8%;
+
+  font-family: $title-font;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: $title-color;
+}
+
+.company__about {
+  max-width: 425px;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6.7%;
+
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+
+  opacity: 0.6;
+}
+
+.company__animation {
+  position: absolute;
+  top: 6%;
+  right: 1.8%;
+
+  @media (max-width: 1260px) {
+    top: 15%;
+  }
+  @media (max-width: 1170px) {
+    top: 25%;
+  }
+  @media (max-width: 1060px) {
+    top: 35%;
+  }
+  @media (max-width: 871px) {
+    display: none;
+  }
+}
+
+.company__button {
+  display: block;
+  position: relative;
+  width: 220px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  background: #5a98d0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border: none;
+  border-radius: 10px;
+}

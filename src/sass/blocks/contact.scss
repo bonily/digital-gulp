@@ -1,0 +1,30 @@
+.contact {
+  margin-right: 97px;
+  margin-bottom: 25px;
+}
+
+.contact__logo {
+  margin-bottom: 26px;
+}
+
+.contact__text {
+  max-width: 300px;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 32px;
+
+  @include section-text;
+
+  opacity: 1;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.contact__letter {
+  margin-left: -35px;
+  margin-right: 18px;
+}

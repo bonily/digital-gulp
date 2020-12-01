@@ -1,0 +1,29 @@
+@mixin section-title {
+  max-width: 230px;
+
+  margin: 0;
+  margin-right: 89px;
+
+  font-size: 36px;
+  line-height: 46px;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+@mixin center {
+  max-width: $desktop-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin section-text {
+  font-size: 16px;
+  line-height: 26px;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  opacity: 0.6;
+}

@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  color: $title-color;
+  background-color: #ffffff;
+
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  // color: $color-title;
+}
+
+main {
+  margin: 0;
+}
